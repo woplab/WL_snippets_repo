@@ -1,0 +1,22 @@
+@mixin font($fontname, $filename, $fontweight, $fontstyle) {
+    @font-face {
+        font-family: $fontname;
+        src: url(#{ $theme_url + "assets/fonts/" + $filename + ".eot"});
+        src: local("😥"),
+            //url(#{'../fonts/'+$filename+'.woff'}) format("woff"),
+            url(#{ $theme_url + "assets/fonts/" + $filename + ".ttf"})
+                format("truetype");
+        font-weight: $fontweight;
+        font-style: $fontstyle;
+        font-display: swap;
+    }
+}
+
+//Include font Inter
+@include font("Inter", "Inter-Regular", 400, normal);
+@include font("Inter", "Inter-Medium", 500, normal);
+@include font("Inter", "Inter-SemiBold", 600, normal);
+@include font("Inter", "Inter-Bold", 700, normal);
+
+//Include font Kharkiv-Tone
+@include font("Kharkiv-Tone", "Kharkiv-Tone", 400, normal);

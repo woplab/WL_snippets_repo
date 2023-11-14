@@ -1,0 +1,113 @@
+// animate css
+@import "wow.js/css/libs/animate.css";
+
+//reset, uncomment if you need
+@import "reset";
+
+//normalize
+@import "normalize";
+
+//variable
+@import "variable";
+
+//fonts
+@import "fonts";
+
+//mixins
+@import "mixins";
+
+//common
+@import "common";
+
+//modules
+@import "swiper/swiper-bundle.css";
+
+//components
+@import "template-parts/components/buttons";
+@import "template-parts/components/content-box";
+@import "template-parts/components/media-box";
+
+//site
+@import "template-parts/site-preloader";
+
+//home
+@import "template-parts/home/hero";
+@import "template-parts/home/about-us";
+@import "template-parts/home/meet-the-founder";
+@import "template-parts/home/products";
+@import "template-parts/home/services";
+@import "template-parts/home/relations";
+@import "template-parts/home/testimonials";
+
+//about is
+@import "template-parts/about-us/hero";
+@import "template-parts/about-us/our-story";
+@import "template-parts/about-us/our-path";
+@import "template-parts/about-us/revolution";
+@import "template-parts/about-us/benefits";
+
+//meet the founder
+@import "template-parts/meet-the-founder/hero";
+@import "template-parts/meet-the-founder/how-it-started";
+@import "template-parts/meet-the-founder/how-it-going";
+
+//services
+@import "template-parts/services/hero";
+@import "template-parts/services/morale";
+@import "template-parts/services/remote-development";
+@import "template-parts/services/experience";
+@import "template-parts/services/remote-team";
+@import "template-parts/services/guest";
+
+//connect with us
+@import "template-parts/connect-with-us/hero";
+@import "template-parts/connect-with-us/contacts";
+
+//testimonials
+@import "template-parts/testimonials/hero";
+@import "template-parts/testimonials/testimonials";
+
+//public relations
+@import "template-parts/public-relations/hero";
+@import "template-parts/public-relations/info";
+@import "template-parts/public-relations/upcoming-events";
+@import "template-parts/public-relations/previous-events";
+@import "template-parts/public-relations/blog-posts";
+@import "template-parts/public-relations/newsletter";
+
+//products
+@import "template-parts/products/hero";
+
+//404
+@import "templates/404";
+
+//page
+@import "templates/page";
+
+//template parts
+@import "template-parts/modal";
+@import "template-parts/page/page-hero";
+@import "template-parts/forms";
+
+//formats
+@import "formats";
+
+//blog
+@import "template-parts/blog/hero";
+@import "template-parts/blog/content";
+
+//single
+@import "template-parts/single-post/hero";
+@import "template-parts/single-post/content";
+@import "template-parts/single-post/recommended";
+
+//woocommerce
+@import "templates/woocommerce/products";
+@import "templates/woocommerce/single-product";
+@import "templates/woocommerce/checkout";
+@import "templates/woocommerce/cart";
+@import "template-parts/woocommerce/cart-icon";
+@import "template-parts/woocommerce/product-filter";
+@import "template-parts/woocommerce/shiping_and_refunds";
+@import "template-parts/woocommerce/up-sell";
+@import "template-parts/woocommerce/order-thank-you";

@@ -1,0 +1,77 @@
+@mixin response($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin response-min($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin response-range($min, $max) {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @content;
+    }
+}
+
+@mixin verticalAlign() {
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        width: 0.1px;
+    }
+}
+
+@mixin textOverflow($overflow: ellipsis) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: $overflow;
+}
+
+@mixin flexC() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin overlay($overlay-color) {
+    background: $overlay-color;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@mixin marginX() {
+    &:first-of-type {
+        margin-left: 0;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@mixin marginY() {
+    &:first-of-type {
+        margin-top: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@mixin transition($duration: 0.3s) {
+    transition: all $duration ease-in-out;
+}

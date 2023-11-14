@@ -1,0 +1,59 @@
+.color-orange {
+    color: $orange;
+    font-family: $font-kharkiv-tone;
+    line-height: normal;
+}
+
+.color-blue {
+    color: $blue;
+    font-family: $font-kharkiv-tone;
+    line-height: normal;
+}
+
+.color-light-green {
+    color: $light-green;
+    font-family: $font-kharkiv-tone;
+    line-height: normal;
+}
+
+.accent-text {
+    font-family: $font-kharkiv-tone;
+    font-size: 18px;
+    line-height: normal;
+
+    @include response-min(992px) {
+        font-size: 20px;
+    }
+
+    &--orange {
+        color: $orange;
+    }
+
+    &--orange-with-star {
+        padding-left: 42px;
+        position: relative;
+
+        &:before {
+            content: url("../img/title_star_orange_small.svg");
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &--light-gray {
+        color: $light-gray;
+    }
+
+    &--with-star {
+        padding-left: 42px;
+        position: relative;
+
+        &:before {
+            content: url("../img/title_star_light_gray_small.svg");
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
