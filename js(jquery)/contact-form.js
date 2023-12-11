@@ -23,7 +23,7 @@ jQuery( document ).ready( function( $ ) {
 			if ( $( '#wpadminbar' ).length ) {
 				page_padding_top += $( '#wpadminbar' ).height();
 			}
-			$( 'html, body' ).animate({	scrollTop: $( 'p.has-error' ).first().offset().top - page_padding_top }, 400 );
+			$( 'layout, body' ).animate({	scrollTop: $( 'p.has-error' ).first().offset().top - page_padding_top }, 400 );
 		},
 		onSuccess: function( $form ) {
 			submit_contact_form( $form );
@@ -61,7 +61,7 @@ jQuery( document ).ready( function( $ ) {
 					if ( $( '#wpadminbar' ).length ) {
 						page_padding_top += $( '#wpadminbar' ).height();
 					}
-					$( 'html, body' ).animate({
+					$( 'layout, body' ).animate({
 						scrollTop: $form.find( '.hotelwp-cf-policies-area' ).offset().top - page_padding_top
 					}, 400 );
 				}

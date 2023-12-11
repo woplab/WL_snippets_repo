@@ -1,19 +1,19 @@
 .color-orange {
-    color: $orange;
     font-family: $font-kharkiv-tone;
     line-height: normal;
+    color: $orange;
 }
 
 .color-blue {
-    color: $blue;
     font-family: $font-kharkiv-tone;
     line-height: normal;
+    color: $blue;
 }
 
 .color-light-green {
-    color: $light-green;
     font-family: $font-kharkiv-tone;
     line-height: normal;
+    color: $light-green;
 }
 
 .accent-text {
@@ -30,8 +30,8 @@
     }
 
     &--orange-with-star {
-        padding-left: 42px;
         position: relative;
+        padding-left: 42px;
 
         &:before {
             content: url("../img/title_star_orange_small.svg");
@@ -46,8 +46,8 @@
     }
 
     &--with-star {
-        padding-left: 42px;
         position: relative;
+        padding-left: 42px;
 
         &:before {
             content: url("../img/title_star_light_gray_small.svg");

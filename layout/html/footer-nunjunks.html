@@ -1,0 +1,65 @@
+<footer class="footer bg-primary text-white overflow-hidden">
+    <div class="container">
+        <div class="row pb-3 pb-md-0">
+            <div class="col-12 col-lg-5 pb-2 pb-md-0 mb-4 mb-md-0">
+                <a href="#" class="logo d-inline-block mb-4 mb-md-3 js-fade-in-up">
+                    <img src="{{data.placeholderImage}}" data-aload="{{data.logodark}}" alt="{{data.siteName}}"/>
+                </a>
+                <p class="h5 font-weight-normal pr-lg-5 js-fade-in-up">{{data.footer.text}}</p>
+            </div>
+            <div class="col-12 col-lg-7 col-xl-6 offset-xl-1">
+                <div class="row">
+                    {% for nav in data.footer.navs %}
+                    <div class="col-6 col-lg-4 mb-4 mb-md-0 js-stagger-fade-in-up-items">
+                        <h2 class="lead font-weight-medium mb-2 mb-md-1 js-stagger-fade-in-up-item">{{nav.title}}</h2>
+                        <ul class="nav nav-light flex-column">
+                            {% for item in nav.items %}
+                            <li class="nav-item js-stagger-fade-in-up-item {{item.classMod}}">
+                                <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                    <div class="col-lg-4 js-stagger-fade-in-up-items">
+                        <h2 class="lead font-weight-medium mb-2 mb-md-1 js-stagger-fade-in-up-item">{{data.footer.contact.nav.title}}</h2>
+                        <ul class="nav nav-light flex-column">
+                            {% for item in data.footer.contact.nav.items %}
+                            <li class="nav-item js-stagger-fade-in-up-item {{item.classMod}}">
+                                <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                        <ul class="nav nav-light socials">
+                            {% for item in data.socials %}
+                            <li class="nav-item js-stagger-fade-in-up-item">
+                                <a href="{{item.url}}" target="_blank" title="{{item.title}}">
+                                    {{item.text | safe}}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4 pt-md-5">
+            <div class="col-12 pt-2">
+                <ul class="nav nav-horizontal nav-light text-muted flex-column flex-md-row js-stagger-fade-in-up-items">
+                    {% for item in data.footer.bottomNav %}
+                    <li class="nav-item pb-1 pb-md-0 mb-3 md-md-0 js-stagger-fade-in-up-item">
+                        {% if item.url %}
+                        <a href="{{item.url}}">
+                            {{item.title}}
+                        </a>
+                        {% else %}
+                        {{item.title}}
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
